@@ -7,7 +7,7 @@ const Welcom = () => {
     <Container>
       <Wrapper>
         <Hello>
-          <p>Welcom to my page!</p>
+          <p>Welcome to my page!</p>
         </Hello>
       </Wrapper>
     </Container>
