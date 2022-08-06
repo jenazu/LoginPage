@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Input = () => {
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ const Input = () => {
         .oneOf([Yup.ref("password"), null], "Passwords must match"),
     }),
     onSubmit: () => {
-      navigate("welcom");
+      navigate("welcome");
     },
   });
   return (
@@ -137,24 +137,6 @@ const Container = styled.div`
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-  }
-`;
-
-const Status = styled.div`
-  height: 10px;
-  width: 10px;
-  background: #9d9d9d;
-  border-radius: 10px;
-  margin-left: 1rem;
-
-  ${StyledInput}:focus + & {
-    background: #ffa689;
-  }
-  ${StyledInput}:invalid + & {
-    background: #fe2f75;
-  }
-  ${StyledInput}:valid + & {
-    background: #70edb9;
   }
 `;
 
