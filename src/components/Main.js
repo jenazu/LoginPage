@@ -6,7 +6,7 @@ const Main = () => {
     <Container>
       <h1>
         Welcom You <br />
-        Back to you
+        Back
       </h1>
     </Container>
   );
