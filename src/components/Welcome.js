@@ -10,7 +10,7 @@ const Welcome = () => {
         <Hello>
           <p>Welcome to my page!</p>
           <Link to="/">
-            <button>Back To Login</button>
+            <button>Back To Sign In</button>
           </Link>
         </Hello>
       </Wrapper>
